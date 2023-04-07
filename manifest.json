@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "MaxTabs",
+  "version": "1.0",
+  "description": "Enforced a max limit for unpinned tabs.  When this limit is exceeded the oldest unpinned tab is automatically closed without warning or notification.",
+   "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": {
+       "16": "icons/folder-icon-16x16.PNG",
+      "48": "icons/folder-icon-48x48.PNG",
+      "128": "icons/folder-icon-128x128.PNG"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+      "16": "icons/folder-icon-16x16.PNG",
+      "48": "icons/folder-icon-48x48.PNG",
+      "128": "icons/folder-icon-128x128.PNG"
+  }
+}

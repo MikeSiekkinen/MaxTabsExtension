@@ -1,0 +1,50 @@
+/* Google Fonts for Steampunk Theme */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+body {
+  background-color: #3d2005;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'IM Fell English SC', serif;
+  color: #e5ceb8;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type="number"] {
+  background-color: #e5ceb8;
+  color: #3d2005;
+  border: 1px solid #a79a74;
+  border-radius: 5px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+button {
+  display: inline-block;
+  background-color: #a79a74;
+  color: #3d2005;
+  border: none;
+  border-radius: 5px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c7b89c;
+}
